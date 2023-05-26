@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" >
+  <title>Laba 3</title>
+</head>
+<body>
+  <h1 class="layer1">Ипотечный калькулятор онлайн и без регистрации!</h1>
+  <h3 class="input">Введите данные</h3>
+  <form action="/" method="post">
+    <input type="radio" name="credit" value="a">Ануитентный<Br>
+    <input type="radio" name="credit" value="d">дифференцированный<Br>
+    <input type="number" name="summ" id="summ" placeholder="Сумма">  {{ s }}<br>
+    <input type="number" name="percent" id="percent"placeholder="Процент">  {{ p }}<br>
+    <input type="number" name="years" id="years"placeholder="Период">  {{ y }}<br>
+    <input type="submit" class="btn-success" value="Расчитать">
+  </form>
+  <h3 class="result">Месячный платеж: {{ result }}</h3>
+</body>
+</html>
