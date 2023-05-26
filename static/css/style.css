@@ -1,0 +1,11 @@
+body {
+	background: linear-gradient(rgba(205, 121, 241, 0.3),rgba(35, 30, 180, 0.485)), url(1.jfif);
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-attachment: fixed;
+	font-family: sans-serif;
+}
+.layer1{
+  color:black;
+
+}
