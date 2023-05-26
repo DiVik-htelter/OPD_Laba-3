@@ -1,4 +1,3 @@
-
 #сумма, процент, период(года)
 def anyitent(summS, percent_yearS, periodS):
     
@@ -15,7 +14,6 @@ def anyitent(summS, percent_yearS, periodS):
     k = (percent_month * pow(1 + percent_month, month)) / (pow(1 + percent_month, month) - 1)
     
     return round(summ * k, 2)
-  
   
   except ValueError:
     pass
@@ -34,9 +32,9 @@ def deff(summS, percent_yearsS, nS):
     month_pay = []
     SUM = 0
     for i in range(1, month + 1):
-      month_pay.append(str(round(first_pay + (summ - (first_pay * (i - 1))) * month_percent,1)) + ' ')  
-      SUM += round(first_pay + (summ - (first_pay * (i - 1))) * month_percent,1)
-    month_pay.append('Полная сумма всех выплат: '+ str(SUM))
+      month_pay.append(round(first_pay + (summ - (first_pay * (i - 1))) * month_percent,1))
+    
     return month_pay
+  
   except ValueError:
     pass

@@ -12,12 +12,15 @@
   <h3 class="input">Введите данные</h3>
   <form action="/" method="post">
     <input type="radio" name="credit" value="a">Ануитентный<Br>
-    <input type="radio" name="credit" value="d">дифференцированный<Br>
+    <input type="radio" name="credit" value="d">Дифференцированный<Br>
     <input type="number" name="summ" id="summ" placeholder="Сумма">  {{ s }}<br>
     <input type="number" name="percent" id="percent"placeholder="Процент">  {{ p }}<br>
     <input type="number" name="years" id="years"placeholder="Период">  {{ y }}<br>
     <input type="submit" class="btn-success" value="Расчитать">
   </form>
-  <h3 class="result">{{ result }}</h3>
+  <h3 class="result">
+    <p>Месячный платеж: </p>{{ result }}
+    <p>Выгоднее - {{ what }} на {{ money }} деняг</p>
+  </h3>
 </body>
 </html>
